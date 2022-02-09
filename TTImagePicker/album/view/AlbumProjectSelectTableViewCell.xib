@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="AlbumProjectSelectTableViewCell" customModule="TTImagePicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cap-3M-tBn">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="NGG-B2-ZUj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyY-DL-6a4">
+                        <rect key="frame" x="112" y="17.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpO-Kd-P2e">
+                        <rect key="frame" x="60" y="17.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TyY-DL-6a4" firstAttribute="centerY" secondItem="vpO-Kd-P2e" secondAttribute="centerY" id="2LQ-cq-EJ2"/>
+                    <constraint firstItem="Cap-3M-tBn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7UL-lr-59c"/>
+                    <constraint firstItem="vpO-Kd-P2e" firstAttribute="leading" secondItem="Cap-3M-tBn" secondAttribute="trailing" constant="10" id="TBz-Kd-a6W"/>
+                    <constraint firstItem="Cap-3M-tBn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eqv-yw-0Zf"/>
+                    <constraint firstItem="TyY-DL-6a4" firstAttribute="leading" secondItem="vpO-Kd-P2e" secondAttribute="trailing" constant="10" id="he3-rl-k9W"/>
+                    <constraint firstItem="vpO-Kd-P2e" firstAttribute="centerY" secondItem="Cap-3M-tBn" secondAttribute="centerY" id="jZP-0e-ei7"/>
+                    <constraint firstAttribute="bottom" secondItem="Cap-3M-tBn" secondAttribute="bottom" id="yHM-hD-ky1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="numLab" destination="TyY-DL-6a4" id="gHy-eD-NuH"/>
+                <outlet property="thumbnail" destination="Cap-3M-tBn" id="qOw-xr-xtK"/>
+                <outlet property="typeLab" destination="vpO-Kd-P2e" id="3XF-WE-edG"/>
+            </connections>
+            <point key="canvasLocation" x="171.01449275362319" y="134.59821428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
